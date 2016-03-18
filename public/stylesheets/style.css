@@ -1,0 +1,22 @@
+body {
+  padding: 50px;
+  font: 16px "Arial Bold", Arial, sans-serif;
+  max-width: 480px;
+  margin: 0 auto;
+  background: #1f3c73;
+  color: #fff;
+}
+
+a {
+  color: #00B7FF;
+}
+
+th, td {
+	padding: 0em 2em 0em 0em;
+	margin: 0;
+	text-align: left;
+}
+
+td {
+	color: #ffee43;
+}

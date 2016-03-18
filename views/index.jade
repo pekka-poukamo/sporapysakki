@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  h1 Pasilan konepaja &ndash; #{moment().format('HH:mm')}
+  p 0658
+
+  table
+    tr
+        th LINJA
+        th ODOTUS
+        th AIKA
+    each time in times
+        tr
+            td
+            td #{moment().to(time, true)}
+            td #{time.format('HH:mm')}
