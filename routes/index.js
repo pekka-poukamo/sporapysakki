@@ -5,7 +5,9 @@ var moment = require('moment');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-	http.get('http://api.reittiopas.fi/hsl/prod/?user=***REMOVED***&pass=***REMOVED***&request=stop&***REMOVED***', (httpres) => {
+	console.log('http://api.reittiopas.fi/hsl/prod/?user=' + process.env.USER + '&pass=' + process.env.PASSWORD + '&request=stop&code=' + process.env.STOPCODE)
+	http.get('http://api.reittiopas.fi/hsl/prod/?user=' + process.env.USER + '&pass=' + process.env.PASSWORD + '&request=stop&code=' + process.env.STOPCODE, (httpres) => {
+	// http.get('http://api.reittiopas.fi/hsl/prod/?user=***REMOVED***&pass=***REMOVED***&request=stop&***REMOVED***', (httpres) => {
 		// console.log(res);
 		var apires = "";
 
